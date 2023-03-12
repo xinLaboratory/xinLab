@@ -3,6 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './App.css'
 
 import { Head, Repo, Member } from './component'
+import { MusicBox } from './components/music'
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <ScrollAnimation animateIn="fadeIn">
         <Member />
       </ScrollAnimation>
+
+      <MusicBox />
     </div>
   )
 }

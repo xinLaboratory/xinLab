@@ -28,3 +28,7 @@
   animation-name: startingUP;
   animation-duration: 1s;
 }
+
+.fixedFooter {
+  position: fixed;
+}
