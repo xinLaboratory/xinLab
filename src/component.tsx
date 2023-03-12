@@ -13,3 +13,19 @@ export class Head extends React.Component {
     </span>;
   }
 }
+
+export class Repo extends React.Component {
+  render() {
+    return <div className="box" id="repo">
+
+    </div>;
+  }
+}
+
+export class Member extends React.Component {
+  render() {
+    return <div className="box" id="Member">
+
+    </div>;
+  }
+}
