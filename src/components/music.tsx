@@ -1,24 +1,10 @@
 import React from "react";
-import axios from 'axios';
 
 export class MusicBox extends React.Component {
-  state = {
-    info: [],
-  }
-
-  componentDidMount() {
-    axios.get('https://yt.000198.xyz/api/?link=https://youtu.be/sMn1-Qjz7uQ')
-        .then(rsp => {
-          const info = rsp.data.info
-
-          this.setState({info})
-        })
-  }
-
   render() {
     return (
       <div className="fixedFooter">
-        
+        <iframe style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/track/7kfzX7ufDOV18X8l00ko4u?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
     )
   }
