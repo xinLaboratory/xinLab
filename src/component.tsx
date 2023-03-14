@@ -2,7 +2,7 @@ import React from "react";
 
 export class Head extends React.Component {
   render() {
-    return <span>
+    return (
       <div className="middle" id="topPage" style={{ background: `url(${this.props.bg})` }}>
         <div className="overlay">
           <h1 className="startup">
@@ -10,22 +10,89 @@ export class Head extends React.Component {
           </h1>
         </div>
       </div>
-    </span>;
+    )
   }
 }
 
 export class Repo extends React.Component {
   render() {
-    return <div className="box" id="repo">
+    return (
+      <div className="box" id="Repo">
+        <h1 style={{ textAlign: 'center', paddingTop: '3rem', paddingBottom: '3rem' }}>
+          <u>
+            Featured Repository
+          </u>
+        </h1>
 
-    </div>;
+        <div className="container">
+          <div className="cardBox">
+            <a href="https://github.com/KIZUNEParty/tyDon">
+              <h1>
+                tyDon
+              </h1>
+            </a>
+            <p>
+              Just a laziest cli package that making for convert time to epochtime.
+            </p>
+          </div>
+
+          <div className="cardBox">
+            <a href="https://github.com/KIZUNEParty/meme-gen">
+              <h1>
+                meme-gen
+              </h1>
+            </a>
+            <p>
+              Just some of meme generator
+            </p>
+          </div>
+
+          <div className="cardBox">
+            <a href="https://github.com/KIZUNEParty/food-rand">
+              <h1>
+                food-rand
+              </h1>
+            </a>
+            <p>
+              Easiest and Fastest way for you to find a menu for your meal if you're in UPDorm!!
+            </p>
+          </div>
+
+          <div className="cardBox">
+            <a href="https://github.com/KIZUNEParty/anime.frame">
+              <h1>
+                anime.frame
+              </h1>
+            </a>
+            <p>
+            for weeb boi from weeb boi
+            </p>
+          </div>
+
+          <div className="cardBox">
+            <a href="https://github.com/KIZUNEParty/ranString">
+              <h1>
+              ranString
+              </h1>
+            </a>
+            <p>
+              just string randomizer
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    );
   }
 }
 
 export class Member extends React.Component {
   render() {
-    return <div className="box" id="Member">
+    return (
+      <div className="box" id="Member">
 
-    </div>;
+      </div>
+    );
   }
 }

@@ -42,3 +42,35 @@
 .box {
   color: whitesmoke;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.cardBox {
+  width: 18rem;
+  color: #2e2f2f;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cardBox h1 {
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardBox a {
+  color: #2e2f2f;
+  transition: all .3s;
+}
+
+.cardBox a:hover {
+  text-decoration: none;
+  opacity: .6;
+}
