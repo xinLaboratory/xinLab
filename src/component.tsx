@@ -6,7 +6,7 @@ export class Head extends React.Component {
       <div className="middle" id="topPage" style={{ background: `url(${this.props.bg})` }}>
         <div className="overlay">
           <h1 className="startup">
-            Welcome to {this.props.name}
+            Welcome to <a href="https://github.com/KIZUNEParty">kizune</a>
           </h1>
         </div>
       </div>
@@ -124,5 +124,15 @@ export class Member extends React.Component {
         </div>
       </div>
     );
+  }
+}
+
+export class Footer extends React.Component {
+  render() {
+    return (
+      <div className="Footer" id='Footer'>
+
+      </div>
+    )
   }
 }

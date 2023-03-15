@@ -6,7 +6,7 @@ import { MusicBox } from './components/music'
 function App() {
   return (
     <div className="App">
-      <Head name='kizune' bg='https://picsum.photos/1920/1080' />
+      <Head bg='https://picsum.photos/1920/1080' />
       <Repo />
       <Member />
       {/* <MusicBox /> */}

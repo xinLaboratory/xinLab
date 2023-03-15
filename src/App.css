@@ -33,6 +33,17 @@
   animation-duration: 1s;
 }
 
+.startup a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.startup a:hover {
+  opacity: .6;
+  text-decoration: underline;
+}
+
 .fixedFooter {
   position: fixed;
   left: 10px;
@@ -41,6 +52,7 @@
 
 .box {
   color: whitesmoke;
+  margin-bottom: 5rem;
 }
 
 .container {
