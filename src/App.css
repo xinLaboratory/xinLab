@@ -65,7 +65,7 @@
 
 .cardBox {
   width: 15rem;
-  height: 100%;
+  height: auto;
   color: #2e2f2f;
   background-color: whitesmoke;
   padding: 1rem;
