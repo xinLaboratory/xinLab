@@ -127,6 +127,16 @@ export class Member extends React.Component {
   }
 }
 
+export class Contact extends React.Component {
+  render() {
+    return (
+      <div className="box" id="Contact">
+        
+      </div>
+    )
+  }
+}
+
 export class Footer extends React.Component {
   render() {
     return (
