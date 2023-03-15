@@ -1,6 +1,6 @@
 import './App.css'
 
-import { Head, Repo, Member } from './component'
+import { Head, Repo, Member, Contact, Footer } from './component'
 import { MusicBox } from './components/music'
 
 function App() {
@@ -9,6 +9,8 @@ function App() {
       <Head bg='https://picsum.photos/1920/1080' />
       <Repo />
       <Member />
+      <Contact />
+      <Footer />
       {/* <MusicBox /> */}
     </div>
   )

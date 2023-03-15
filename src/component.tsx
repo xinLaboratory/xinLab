@@ -131,7 +131,7 @@ export class Contact extends React.Component {
   render() {
     return (
       <div className="box" id="Contact">
-        
+
       </div>
     )
   }
@@ -140,8 +140,13 @@ export class Contact extends React.Component {
 export class Footer extends React.Component {
   render() {
     return (
-      <div className="Footer" id='Footer'>
-
+      <div className="footer" id='Footer'>
+        <p>
+          made w/ 🤍 by <a href="https://github.com/KIZUNEParty">kizune team.</a>
+        </p>
+        <p>
+          &copy; 2023 <a href="https://suphakit.net">Suphakit P.</a> All Right Reserved
+        </p>
       </div>
     )
   }
