@@ -118,7 +118,7 @@ export class Member extends React.Component {
               </a>
             </h3>
             <span>
-              a music composer with full-stack web dev. skill :D
+              🤔😒
             </span>
           </div>
         </div>
