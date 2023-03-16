@@ -11,7 +11,7 @@ function App() {
       <Member />
       <Contact />
       <Footer />
-      
+
       <MusicBox />
     </div>
   )

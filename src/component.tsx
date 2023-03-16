@@ -1,6 +1,6 @@
 import React from "react";
 
-export class Head extends React.Component {
+export class Head extends React.Component <any, any> {
   render() {
     return (
       <div className="middle" id="topPage" style={{ background: `url(${this.props.bg})` }}>
