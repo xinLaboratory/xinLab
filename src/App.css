@@ -98,6 +98,23 @@
   opacity: .6;
 }
 
+.box#Contact {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  font-size: 18px;
+}
+
+.contactBox a {
+  color: whitesmoke;
+  transition: all .3s;
+}
+
+.contactBox a:hover {
+  opacity: .6;
+  text-decoration: none;
+}
+
 .footer {
   text-align: center;
   background-color: whitesmoke;
