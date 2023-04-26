@@ -23,7 +23,7 @@ export class Repo extends React.Component {
         <h1
           style={{
             textAlign: "center",
-            paddingBottom: "3rem",
+            paddingBottom: "1rem",
           }}
         >
           <u>Featured Repository</u>
