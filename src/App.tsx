@@ -1,18 +1,21 @@
 import './App.css'
 
-import { Head, Repo, Member, Contact, Footer } from './component'
-import { MusicBox } from './components/music'
+import { Head } from './components/Heading'
+import { Repo } from './components/Repo'
+import { Member } from './components/Member'
+import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
+
+import background from './assets/bg.webp'
 
 function App() {
   return (
     <div className="App">
-      <Head bg='https://picsum.photos/1920/1080' />
+      <Head bg={background} />
       <Repo />
       <Member />
       <Contact />
       <Footer />
-
-      <MusicBox />
     </div>
   )
 }
