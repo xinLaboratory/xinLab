@@ -117,6 +117,19 @@
   text-decoration: none;
 }
 
+.contactButton {
+  text-decoration: none;
+  background-color: #FE6E61;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all .3s;
+}
+
+.contactButton:hover {
+  opacity: .6;
+  font-size: 15px;
+}
+
 .footer {
   text-align: center;
   background-color: whitesmoke;
