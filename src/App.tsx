@@ -1,6 +1,7 @@
 import './App.css'
 
 import { Head } from './components/Heading'
+import { About } from './components/About'
 import { Repo } from './components/Repo'
 import { Member } from './components/Member'
 import { Contact } from './components/Contact'
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Head bg={background} />
+      <About />
       <Repo />
       <Member />
       <Contact />

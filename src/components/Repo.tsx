@@ -7,7 +7,6 @@ export class Repo extends React.Component {
         <h1
           style={{
             textAlign: "center",
-            paddingTop: "3rem",
             paddingBottom: "3rem",
           }}
         >
