@@ -1,6 +1,38 @@
 import React from "react";
 
+interface memberInterface {
+  id: number;
+  image: string;
+  username: string;
+  name: string;
+  desp: string;
+}
+
 export class Member extends React.Component {
+  userData: memberInterface[] = [
+    {
+      id: 0,
+      image: "https://avatars.githubusercontent.com/u/25049577?v=4",
+      username: "dethMastery",
+      name: "Suphakit P.",
+      desp: "a music composer with full-stack web dev. skill :D",
+    },
+    {
+      id: 1,
+      image: "https://avatars.githubusercontent.com/u/1833001?v=4",
+      username: "kana2011th",
+      name: 'Khanaphon "kana" Phaengtan',
+      desp: "full-stack dev. now in sup. stuck in port.",
+    },
+    {
+      id: 2,
+      image: "https://avatars.githubusercontent.com/u/79712705?v=4",
+      username: "mty8421",
+      name: "Panthakit totid",
+      desp: "🤔😒",
+    },
+  ];
+
   render() {
     return (
       <div className="box" id="Member">
@@ -9,29 +41,19 @@ export class Member extends React.Component {
         </h1>
 
         <div className="container">
-          <div className="cardBox">
-            <img
-              src="https://avatars.githubusercontent.com/u/25049577?v=4"
-              alt="deth"
-            />
-            <h3>
-              <a href="https://github.com/dethMastery">
-                Suphakit P. (dethMastery)
-              </a>
-            </h3>
-            <span>a music composer with full-stack web dev. skill :D</span>
-          </div>
-
-          <div className="cardBox">
-            <img
-              src="https://avatars.githubusercontent.com/u/79712705?v=4"
-              alt="deth"
-            />
-            <h3>
-              <a href="https://github.com/mTy8421">Panthakit Totid (mTy8421)</a>
-            </h3>
-            <span>🤔😒</span>
-          </div>
+          {this.userData.map((user) => {
+            return (
+              <div className="cardBox">
+                <img src={user.image} alt={user.username} />
+                <h3>
+                  <a href={'https://github.com/' + user.username}>
+                    {user.name} ({user.username})
+                  </a>
+                </h3>
+                <span>{user.desp}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
