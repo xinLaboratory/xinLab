@@ -6,6 +6,7 @@ interface repoInterface {
   img: string;
   link: string;
   desp: string;
+  year: string;
 }
 
 export class Repo extends React.Component {
@@ -16,6 +17,7 @@ export class Repo extends React.Component {
       img: "https://cdn.jsdelivr.net/gh/xinLaboratory/assets@master/Homepage/Works/cmmt2023.webp",
       link: "https://cmmt.caffe.quest",
       desp: "This Project just get started by `Mr. Tatsuya` and many of comment by various member in `GrassRoot Community` for `Chiang Mai MaiMai Tournament`",
+      year: "April 2023 - Present",
     },
   ];
 
@@ -40,10 +42,18 @@ export class Repo extends React.Component {
                 style={{ background: `url(${repoData.img})` }}
               >
                 <div className="bib">
-                  <a href={repoData.link}>
-                    <h1>{repoData.name}</h1>
-                  </a>
-                  <p>{repoData.desp}</p>
+                  <p className="cBody" style={{padding: 0, margin: 0}}>
+                    <a href={repoData.link}>
+                      <h1>{repoData.name}</h1>
+                    </a>
+                    <p>{repoData.desp}</p>
+                  </p>
+                  <p className="cFooter">
+                    <hr />
+                    <span style={{ color: "rgb(198, 198, 198)" }}>
+                      {repoData.year}
+                    </span>
+                  </p>
                 </div>
               </div>
             );
