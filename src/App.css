@@ -152,6 +152,55 @@
   opacity: .6;
 }
 
+.memberCard {
+  height: 20rem !important;
+  display: flex;
+  flex-direction: column;
+  text-align: center !important;
+  justify-content: end !important;
+
+  padding: 0 !important;
+}
+
+.memberCard .picture {
+  width: 100%;
+  height: 100%;
+  
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.memberCard .profileInfo {
+  background: linear-gradient(0deg, #000000 0%, rgba(0,0,0,0.7) 100%);
+  color: whitesmoke;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 2rem 0;
+  opacity: 0;
+
+  width: 100%;
+
+  margin-top: -5rem;
+
+  transition: all .3s;
+}
+
+.memberCard .profileInfo a {
+  color: whitesmoke !important;
+}
+
+.memberCard .profileInfo:hover {
+  position: relative;
+  margin-top: -1rem;
+  opacity: 1;
+}
+
 .box#Contact {
   width: 80%;
   margin: 0 auto;

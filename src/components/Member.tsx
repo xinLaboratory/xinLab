@@ -43,14 +43,19 @@ export class Member extends React.Component {
         <div className="container">
           {this.userData.map((user) => {
             return (
-              <div className="cardBox">
-                <img src={user.image} alt={user.username} />
-                <h3>
-                  <a href={'https://github.com/' + user.username}>
-                    {user.name} ({user.username})
-                  </a>
-                </h3>
-                <span>{user.desp}</span>
+              <div className="cardBox memberCard">
+                <div
+                  className="picture"
+                  style={{ background: `url(${user.image})` }}
+                ></div>
+                <div className="profileInfo">
+                  <h3 style={{margin: 0}}>
+                    <a href={"https://github.com/" + user.username}>
+                      {user.name} ({user.username})
+                    </a>
+                  </h3>
+                  <span>{user.desp}</span>
+                </div>
               </div>
             );
           })}
